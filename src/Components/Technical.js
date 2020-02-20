@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = (props) => {
     return (
-        <div className="card p-1" style={{ height: '200px' }}>
+        <div className="card pt-1" style={{ height: '200px' }}>
             <img className="card-img-top" style={{ objectFit: 'contain', height: '150px' }} src={`/img/${props.technical}.png`} alt="Card image cap" />
             <div className="card-body">
                 <p className="card-text text-dark text-center">{props.technical}</p>
@@ -15,9 +15,9 @@ const TechnicalList = (props) => {
     return (
         <div className='row pt-5'>
             <h5>{props.name}</h5>
-            <div className='row'>
+            <div className='row mx-auto'>
                 {props.list.map((tectnical) => {
-                    return <div className='col-6 col-sm-3 p-2'><Card technical={tectnical} /></div>
+                    return <div className='col-6 col-sm-3 p-2 '><Card technical={tectnical} /></div>
                 })}
             </div>
         </div>
