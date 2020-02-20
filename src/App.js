@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar'
 import Profile from './Components/Profile'
 import Technical from './Components/Technical'
 import Expereince from './Components/Expereince'
+import Footer from './Components/Footer'
 
 class App extends React.Component {
   render() {
@@ -73,6 +74,7 @@ class App extends React.Component {
         <div className='container py-5'>
           <Expereince expereinces={profile.expereinces} />
         </div>
+        <Footer name={profile.name}/>
       </div>
     );
   }
