@@ -3,7 +3,7 @@ import React from 'react'
 const Card = (props) => {
     return (
         <div className="card pt-1" style={{ height: '200px' }}>
-            <img className="card-img-top" style={{ objectFit: 'contain', height: '150px' }} src={`/img/${props.technical}.png`} alt="Card image cap" />
+            <img className="card-img-top" style={{ objectFit: 'contain', height: '150px' }} src={`/img/${props.technical}.png`} alt={props.technical} />
             <div className="card-body">
                 <p className="card-text text-dark text-center">{props.technical}</p>
             </div>

@@ -12,7 +12,7 @@ const ListContact = (props) => {
             {props.contacts.map((contact) => {
                 return (
                     <div className='col-6 col-sm-3 mb-2 p-1'>
-                        <a href={contact.link}>
+                        <a href={contact.link} target='_blank' rel="noopener noreferrer">
                             <button type="button" style={{ width: '100%' }} class={'btn btn-dark'}>{contact.name}</button>
                         </a>
                     </div>
